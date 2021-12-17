@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.bjit.listeners.ListenerClass"/>
+    <listener class-name="com.bjit.listeners.MethodInterceptor"/>
+  </listeners>
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.bjit.tests.OrangeHRMLoginLogoutTest">
+        <methods>
+          <include name="loginLogoutTest"/>
+          <include name="newTest"/>
+        </methods>
+      </class> <!-- com.bjit.tests.OrangeHRMLoginLogoutTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
